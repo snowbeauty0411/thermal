@@ -1,0 +1,311 @@
+<!-- HTMLコード -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./libs/slick/slick.css">
+    <link rel="stylesheet" href="./libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- javascript -->
+    <script src="./libs/jquery/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="header-inner">
+            <div class="heroes">
+                <figure class="item pc tb">
+                    <img src="./assets/img/hero01.png">
+                </figure>
+                <figure class="item pc tb">
+                    <img src="./assets/img/hero02.png">
+                </figure>
+                <figure class="item pc tb">
+                    <img src="./assets/img/hero03.png">
+                </figure>
+                <figure class="item pc tb">
+                    <img src="./assets/img/hero04.png">
+                </figure>
+                <figure class="item sp">
+                    <img src="./assets/img/hero01sp.png">
+                </figure>
+                <figure class="item sp">
+                    <img src="./assets/img/hero02sp.png">
+                </figure>
+                <figure class="item sp">
+                    <img src="./assets/img/hero03sp.png">
+                </figure>
+                <figure class="item sp">
+                    <img src="./assets/img/hero04sp.png">
+                </figure>
+            </div>
+            <div class="header-title">
+                <h1>
+                    新しい生活に安心を
+                    <span>非接触の検温カメラ</span>
+                </h1>
+                <div class="feature-items">
+                    <div class="item">
+                        <img src="./assets/img/feature01.png">
+                        <p class="name">高精度</p>
+                        <p class="content"><span>検温誤差</span>精度:±0.5℃</p>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/img/feature02.png">
+                        <p class="name">カスタマイズ<br>可能</p>
+                        <p class="content">マスク非着用のアラート音</p>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/img/feature03.png">
+                        <p class="name">スピード<br>測定</p>
+                        <p class="content">最大0.2秒</p>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/img/feature04.png">
+                        <p class="name">人件費<br>大幅削減</p>
+                        <p class="content">無人で測定が可能</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="page-wrapper">
+        <section class="section section--problem">
+            <div class="section-title">
+                <h2>Problem<span>こんなお悩みありませんか？</span></h2>
+            </div>
+            <div class="section-content">
+                <span class="nayami-text nayami-text--1">検温対応用のスタッフの<br>人件費がかかり過ぎる。</span>
+                <span class="nayami-text nayami-text--2">マスク非着用のお客様対応に<br class="pc tb">困っている。</span>
+                <span class="nayami-text nayami-text--3">非接触で検温できるようにしたい。</span>
+                <span class="nayami-text nayami-text--4">来訪者が集中するとカメラの前<br class="pc tb">に長蛇の列ができてしまう。</span>
+                <span class="nayami-text nayami-text--5">社員の体調管理の為に<br class="pc tb">検温を行いたい。</span>
+                <img src="./assets/img/nayami.png">
+            </div>
+        </section>
+        <section class="section section--whatis">
+            <div class="section-title">
+                <h2>What’s<span>サーマルカメラとは</span></h2>
+            </div>
+            <div class="section-content">
+                <p class="text">
+                    非接触で無人での利用が可能！<br>
+                    お客様とスタッフの安心と安全を低コストで実現します。<br>
+                    検査員がいらず集団感染や、二次感染などのリスクを軽減することができます。温度が高い所は赤く、低い所は青く表示されます。サーマルカメラはマスク着用されていない場合マスク着用警告も促す機能がついているので、店内のお客様にもご安心いただけます。
+                </p>
+                <figure class="right-img">
+                    <img src="./assets/img/camera.png">
+                </figure>
+            </div>
+        </section>
+        <section class="section section--merit">
+            <div class="section-title">
+                <h2>Merit<span>サーマルカメラを設置するメリット</span></h2>
+            </div>
+            <div class="section-content">
+                <p class="text">
+                    弊社のサーマルカメラはマスク未着用の警告アラート等、<br>
+                    多様な機能が付随しております。
+                </p>
+                <div class="list">
+                    <dl class="item">
+                        <dt>
+                            <img src="./assets/img/merit01.png">
+                            人件費の削減
+                        </dt>
+                        <dd>
+                            <p class="text">
+                                検温を行うスタッフを用意する必要がないので、<br class="pc sp">
+                                本来すべき仕事に集中してもらうことが可能です。
+                            </p>
+                        </dd>
+                    </dl>
+                    <dl class="item">
+                        <dt>
+                            <img src="./assets/img/merit02.png">
+                            安心と安全を確保
+                        </dt>
+                        <dd>
+                            <p class="text">
+                                設置を行うことでお客様の安全を確保し、<br class="pc sp">
+                                安心感を与えて信頼を得ることができます。
+                            </p>
+                        </dd>
+                    </dl>
+                    <dl class="item">
+                        <dt>
+                            <img src="./assets/img/merit03.png">
+                            異常を音声警告
+                        </dt>
+                        <dd>
+                            <p class="text">
+                                体温が高い場合やマスク未着用の場合に<br class="pc">
+                                音声による<br class="sp">警告を行います。
+                            </p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="list">
+                    <dl class="item">
+                        <dt>
+                            <img src="./assets/img/merit04.png">
+                            体調の管理
+                        </dt>
+                        <dd>
+                            <p class="text">
+                                スタッフの出退勤と同時に検温を<br class="pc">
+                                行うことで、<br class="sp">体調の管理を実現します。
+                            </p>
+                        </dd>
+                    </dl>
+                    <dl class="item">
+                        <dt>
+                            <img src="./assets/img/merit05.png">
+                            顔認証での検知・解錠
+                        </dt>
+                        <dd>
+                            <p class="text">
+                                顔認証を行い人物の検知や設定された人物の<br class="pc">
+                                場合のみ<br class="sp">ドアの解錠を行うことが可能です。
+                            </p>
+                        </dd>
+                    </dl>
+                    <dl class="item">
+                        <dt>
+                            <img src="./assets/img/merit06.png">
+                            来客の記録と検温
+                        </dt>
+                        <dd>
+                            <p class="text">
+                                来客の際に検温を行うのと同時に<br class="pc sp">
+                                記録を取り、管理・把握ができます。
+                            </p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="section-decorator"></div>
+        </section>
+        <section class="section section--product">
+            <div class="section-title">
+                <h2>Product<span>製品・価格</span></h2>
+            </div>
+            <ul class="section-content">
+                <div class="features">
+                    <ul class="list">
+                        <li class="item">検温精度　±0.5</li>
+                        <li class="item">検温速度　0.2秒</li>
+                        <li class="item">検温距離　0.5ｍ〜1.8ｍ</li>
+                        <li class="item">１人ずつ確実に測定</li>
+                        <li class="item">マスク非着用警告通知可能</li>
+                    </ul>
+                    <figure class="right-img">
+                        <img src="./assets/img/camera.png">
+                    </figure>
+                </div>
+                <ul class="payment-options">
+                    <li class="item">
+                        <div class="type">分割払い</div>
+                        <div class="price">
+                            <p>6,500円<span>【税抜】</span>× 36ヶ月</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="type">一括払い</div>
+                        <div class="price">
+                            <p>234,000円<span>【税抜】</span></p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="btn-panel">
+                    <a class="btn" href="#"><span>ご購入はこちらから</span></a>
+                </div>
+            </ul>
+        </section>
+        <section class="section section--place">
+            <div class="section-title">
+                <h2>Place<span>設置場所例</span></h2>
+                <span class="description">人の出入りが多い場所に設置していただけます。</span>
+            </div>
+            <div class="section-content">
+                <ul class="place-list">
+                    <li class="item">
+                        <img src="./assets/img/place01.png">
+                        <p class="text">ドラックストア・スーパー</p>
+                    </li>
+                    <li class="item">
+                        <img src="./assets/img/place02.png">
+                        <p class="text">学校・公共施設</p>
+                    </li>
+                    <li class="item">
+                        <img src="./assets/img/place03.png">
+                        <p class="text">工場・物流倉庫</p>
+                    </li>
+                </ul>
+                <ul class="place-list">
+                    <li class="item">
+                        <img src="./assets/img/place04.png">
+                        <p class="text">飲食店</p>
+                    </li>
+                    <li class="item">
+                        <img src="./assets/img/place05.png">
+                        <p class="text">オフィスビル</p>
+                    </li>
+                    <li class="item">
+                        <img src="./assets/img/place06.png">
+                        <p class="text">サロン・ジム等</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section section--flow">
+            <div class="section-title">
+                <h2>Flow<span>導入までの流れ</span></h2>
+            </div>
+            <div class="section-content">
+                <ul class="flow-items">
+                    <li class="item">
+                        <p class="flow-title">01　発注</p>
+                        <p class="flow-description">下記ボタンより発注下さい。</p>
+                        <div class="btn-panel">
+                            <a class="btn" href="#">発注はこちら</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <p class="flow-title">02　配送</p>
+                        <p class="flow-description">注文頂いた内容に従い順次配送致します。</p>
+                    </li>
+                    <li class="item">
+                        <p class="flow-title">03　設置</p>
+                        <p class="flow-description">お手元に届きましたら、設置下さい。<br>三脚やスタンドで組み立てが簡単にできます。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer class="page-footer">
+        <div class="footer-top">
+            <p class="text">その他お問い合わせはこちらから<br>|</p>
+        </div>
+        <div class="footer-middle">
+            <div class="btn-panel">
+                <a class="mail-btn" href="mailto:ai-solution@thankyoulife.co.jp">ai-solution@thankyoulife.co.jp</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="about">株式会社サンキューライフ<br>愛知県春日井市鳥居松町五丁目114番地１</p>
+        </div>
+    </footer>
+</body>
+</html>
